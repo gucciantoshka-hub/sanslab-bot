@@ -8,7 +8,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 BOT_TOKEN     = "8603036898:AAH5aTd6ui9FmNU6zOvemenJlz5sfCkatI0"
 SUPABASE_URL  = "https://cbfztoaeyvepxnwvayyk.supabase.co"
 SUPABASE_KEY  = "sb_publishable_Rnhs6OvSqHsQsn14nsRekg_ouO-32fl"
-ANTHROPIC_KEY = "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"
+ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "")
 ALLOWED_USER  = "6138343624"
 
 HEADERS_SB = {
